@@ -36,6 +36,10 @@ class ViewController: UIViewController, StoreSubscriber {
     @IBAction func upTouch(_ sender: AnyObject) {
         mainStore.dispatch(CounterActionIncrease());
     }
+    
+    @IBAction func resetTouch(_ sender: AnyObject) {
+        mainStore.dispatch(CounterActionReset());
+    }
 
 }
 

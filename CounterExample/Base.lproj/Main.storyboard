@@ -19,34 +19,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn4-4h-m4t">
-                                <rect key="frame" x="224" y="270" width="153" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn4-4h-m4t">
+                                <rect key="frame" x="200.33333333333334" y="436" width="27.666666666666657" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-AJ-bQe">
-                                <rect key="frame" x="224" y="357" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-AJ-bQe">
+                                <rect key="frame" x="146" y="517" width="30" height="30"/>
                                 <state key="normal" title="Up"/>
                                 <connections>
                                     <action selector="upTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKZ-vj-5kO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brm-gs-UDb">
-                                <rect key="frame" x="331" y="357" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brm-gs-UDb">
+                                <rect key="frame" x="248.66666666666663" y="517" width="39" height="30"/>
                                 <state key="normal" title="Down"/>
                                 <connections>
                                     <action selector="downTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O77-Le-tQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H37-F6-NRN">
+                                <rect key="frame" x="194.66666666666666" y="595" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LOk-PY-xgB"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bI4-DQ-EX9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Brm-gs-UDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="54" id="6Ly-C4-Zx2"/>
+                            <constraint firstItem="bn4-4h-m4t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BP7-aL-Fda"/>
                             <constraint firstItem="YtN-AJ-bQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-53" id="HBM-21-Vs8"/>
                             <constraint firstItem="bn4-4h-m4t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JDD-uE-GGx"/>
+                            <constraint firstItem="H37-F6-NRN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OI1-Hm-zRx"/>
+                            <constraint firstItem="bn4-4h-m4t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OuK-MJ-xNf"/>
                             <constraint firstItem="bn4-4h-m4t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aS0-hg-cbZ"/>
                             <constraint firstItem="Brm-gs-UDb" firstAttribute="top" secondItem="bn4-4h-m4t" secondAttribute="bottom" constant="27" id="b8j-2z-r9u"/>
+                            <constraint firstItem="H37-F6-NRN" firstAttribute="top" secondItem="bn4-4h-m4t" secondAttribute="bottom" constant="105" id="dN3-C2-Gq6"/>
                             <constraint firstItem="YtN-AJ-bQe" firstAttribute="top" secondItem="bn4-4h-m4t" secondAttribute="bottom" constant="27" id="e6h-pJ-O5F"/>
                         </constraints>
                     </view>
